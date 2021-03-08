@@ -1,0 +1,148 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+html, body
+{
+    margin: 0px;
+}
+
+.footer{
+    padding: 10px;
+    background-image: radial-gradient(rgb(122, 13, 86),#fff)
+}
+.footer:hover{
+    padding: 40px;
+    transition: 2s;
+}
+.hdtext{
+  letter-spacing: 10px;
+  text-shadow: #6d1733;
+}
+
+
+.team {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .team .card:hover img {
+    transform: scale(1.2) !important;
+    transition: 0.3s;
+    border: 2px solid #fb5b3f !important;
+  }
+  .team .card:hover .designation {
+    clip-path: polygon(0 11%, 100% 0, 100% 100%, 0% 100%);
+    background-color: #fb5b3f;
+    transition: 0.3s;
+  }
+  .team .card {
+    padding: 2px;
+  }
+  .team .card img {
+    object-fit: cover;
+  }
+  .team .designation {
+    transition: 0.2s ease-in;
+    padding: 5px;
+  }
+  .team img {
+    width: 120px !important;
+    height: 120px !important;
+    margin-top: 30px !important;
+    border: 5px solid #fb5b3f !important;
+    transition: 0.2s ease-in;
+    background-color: #fb5b3f;
+  }
+  .team h3 {
+    font-weight: 100;
+    font-size: 20px;
+  }
+  .team h6 {
+    font-size: 15px;
+  }
+  .team .social {
+    margin-top: 20px;
+  }
+  .team .social a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 13px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 25px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+  }
+  .team .social a:hover {
+    background-color: white;
+    color: #33383b;
+  }
+.thinking .card .designation {
+    clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 100%);
+    background-color: #fb5b3f;
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin-top: -50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+div.container
+{
+    font-family: Raleway;
+    margin: 0 auto;
+	padding: 2em 3em;
+	text-align: center;
+}
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+.blue
+{
+    background-image:linear-gradient(rgb(15, 245, 195),#6d1733)
+}
+/* Circle behind */
+div.circleBehind a:before, div.circleBehind a:after
+{
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #0277bd;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    border-radius: 50%;
+    background: transparent;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+div.circleBehind a:after
+{
+    border-width: 2px;
+    transition: all 0.4s;
+}
+
+div.circleBehind a:hover:before
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+div.circleBehind a:hover:after
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1.3);
+}
